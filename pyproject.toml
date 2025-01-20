@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py_toolkit"
+version = "0.1.0"
+description = "Collection of TPG functions for SharePoint, Salesforce, and Genesys utilities"
+authors = [
+  { name="Chris Pachulski", email="cjpach@icloud.com" }
+]
+dependencies = [
+  "requests>=2.0.0",
+  "pandas>=1.0.0"
+  # add more as needed
+]

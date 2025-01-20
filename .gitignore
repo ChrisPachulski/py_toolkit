@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+.dist/
+build/
+ 
+# Virtualenv
+venv/
+.env/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# JSON Secrets
+*.json
