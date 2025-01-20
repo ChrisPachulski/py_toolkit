@@ -20,3 +20,6 @@ Thumbs.db
 
 # JSON Secrets
 *.json
+
+# .env
+*.env
