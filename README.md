@@ -28,7 +28,7 @@ Each utility is cleanly separated into its own package under `src/utility_functi
 ---
 
 ## Project Structure
-
+```bash
 py_toolkit/ 
 ├── README.md
 ├── google_oauth_token.json
@@ -78,7 +78,7 @@ py_toolkit/
     ├── test_google_sheets_utility.py
     ├── test_salesforce_utility.py
     └── test_sharepoint_utility.py
-
+```
 
 - **`gmail_utility`**: Sending emails with attachments via Gmail API. Reviewing Inbox emails and attachments therein.  
 - **`google_sheets_utility`**: Creating, reading, updating Google Sheets  
