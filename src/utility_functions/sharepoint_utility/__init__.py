@@ -9,16 +9,12 @@ from .explorer import (
     load_tabular_file,
     connect_and_explore_sharepoint_cascading,
     # convenience wrappers
-    sharepoint_tpg_call_center_explorer,
-    sharepoint_tpg_training_explorer,
-    sharepoint_tpg_orr_ncc_explorer
+    sharepoint_known_explorer
 )
 from .uploader import (
     upload_file_to_sharepoint,
     # convenience wrappers
-    sharepoint_tpg_call_center_upload,
-    sharepoint_tpg_training_upload,
-    sharepoint_tpg_orr_ncc_upload
+    sharepoint_known_upload,
 )
 
 # Optionally define __all__ to limit what is imported via "from sharepoint_utility import *"
@@ -31,10 +27,6 @@ __all__ = [
     "load_tabular_file",
     "connect_and_explore_sharepoint_cascading",
     "upload_file_to_sharepoint",
-    "sharepoint_tpg_call_center_explorer",
-    "sharepoint_tpg_training_explorer",
-    "sharepoint_tpg_orr_ncc_explorer",
-    "sharepoint_tpg_call_center_upload",
-    "sharepoint_tpg_training_upload",
-    "sharepoint_tpg_orr_ncc_upload"
+    "sharepoint_known_explorer",
+    "sharepoint_known_upload",
 ]

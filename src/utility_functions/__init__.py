@@ -5,17 +5,13 @@ from .sharepoint_utility import (
 
     # From explorer.py
     connect_and_explore_sharepoint_cascading,
-    sharepoint_tpg_call_center_explorer,
-    sharepoint_tpg_training_explorer,
-    sharepoint_tpg_orr_ncc_explorer,
+    sharepoint_known_explorer,
     build_file_tree_df,
     load_tabular_file,
 
     # From uploader.py
     upload_file_to_sharepoint,
-    sharepoint_tpg_call_center_upload,
-    sharepoint_tpg_training_upload,
-    sharepoint_tpg_orr_ncc_upload
+    sharepoint_known_upload,
 )
 
 # ================== SALESFORCE ==================
@@ -55,20 +51,32 @@ from .genesys_utility import (
     clean_genesys_id_column
 )
 
+# ================== Google Sheets ==================
+from .google_sheets_utility import (
+    # From sheets.py
+    create_or_update_google_sheet,
+    read_sheet
+)
+
+# ================== Google Sheets ==================
+from .gmail_utility import (
+    # From inbox.py
+    gmail_reports_inbox,
+    
+    # From send.py
+    gmail_send_message
+)
+
 # If you want to define a single __all__ that collects everything:
 __all__ = [
     # SHAREPOINT
     "get_client_context",
     "connect_and_explore_sharepoint_cascading",
-    "sharepoint_tpg_call_center_explorer",
-    "sharepoint_tpg_training_explorer",
-    "sharepoint_tpg_orr_ncc_explorer",
+    "sharepoint_known_explorer",
     "build_file_tree_df",
     "load_tabular_file",
     "upload_file_to_sharepoint",
-    "sharepoint_tpg_call_center_upload",
-    "sharepoint_tpg_training_upload",
-    "sharepoint_tpg_orr_ncc_upload",
+    "sharepoint_known_upload",
 
     # SALESFORCE
     "get_salesforce_refresh_token",
@@ -86,4 +94,12 @@ __all__ = [
     "fetch_all_pages_for_conversations_details_query_payload",
     "fetch_post_analytics_conversations_details_query_df",
     "clean_genesys_id_column",
+    
+    # Google Sheets    
+    "create_or_update_google_sheet",
+    "read_sheet",
+    
+    # Gmail
+    "gmail_reports_inbox",
+    "gmail_send_message",
 ]
