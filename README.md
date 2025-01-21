@@ -80,7 +80,9 @@ py_toolkit/
     └── test_sharepoint_utility.py
 ```
 
-- **`gmail_utility`**: Sending emails with attachments via Gmail API. Reviewing Inbox emails and attachments therein.  
+- **`gmail_utility`**: 
+  - Sending emails with attachments via Gmail API. 
+  - Reviewing Inbox emails and attachments therein.  
 - **`google_sheets_utility`**: Creating, reading, updating Google Sheets  
 - **`salesforce_utility`**: OAuth flows, SOQL queries, Analytics reporting  
 - **`sharepoint_utility`**: Auth, file explorer, and uploading  
